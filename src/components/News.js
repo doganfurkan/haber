@@ -68,9 +68,9 @@ export default function News({ item }) {
                 >
                   <PiCopy /> Haber Linkini Kopyala
                 </div>
-                <div className="shareWhatsapp">
+                <a className="shareWhatsapp" href={`https://api.whatsapp.com/send?text=${item.url}`}>
                   <PiWhatsappLogo /> Whatsapp ile Paylaş
-                </div>
+                </a>
               </div>
             </div>
           </div>
