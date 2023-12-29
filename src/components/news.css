@@ -56,10 +56,8 @@
 }
 
 .newsActions>button,.share{
-    background:#2255aa;
     border:0;
     border-radius: 3rem;
-    color:#fff;
     display: flex;
     align-items: center;
     gap:.25rem;
@@ -71,8 +69,22 @@
     font-size: 18px;
 }
 
+.like{
+  background: #fff;
+  color:#0b2042;
+}
+
 .like,.comment{
     padding:.5rem .75rem;
+}
+
+.like.liked svg{
+  color:#ef3378
+}
+
+.comment{
+  background:#c3dd1c;
+  color:#0b2042;
 }
 
 .share{
@@ -81,6 +93,9 @@
     height:100%;
     aspect-ratio: 1;
     position: relative;
+    background:#2255aa;
+    color:#fff;
+
 }
 
 .shareMenu{
@@ -91,7 +106,6 @@
   bottom:0;
   transform: translateY(calc(100% + 1.5rem));
   background: #fff;
-  padding:.75rem;
   border-radius: .5rem;
   box-shadow: -1rem 1rem 3rem;
   transition: .25s ease-in-out;
@@ -104,6 +118,17 @@
   opacity: 1;
   visibility: visible;
   transform: translateY(calc(100% + .5rem));
+}
+
+.shareMenu>div{
+  padding:.75rem;
+  display: flex;
+  align-items: center;
+  gap:.25rem
+}
+
+.shareMenu>div+div{
+  border-top:1px solid #cad4e5
 }
 
 .NewsContentContainer {
@@ -149,7 +174,7 @@
 }
 
 .readMore{
-    color:#DD6B1C;
+    color:#c3dd1c;
     font-size:12px;
     display:block;
     text-decoration: none;
