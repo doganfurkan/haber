@@ -5,7 +5,7 @@ import { PiHouseFill, PiMagnifyingGlass, PiNewspaper,PiUser } from "react-icons/
 export default function Navbar() {
   return (
     <nav id="nav">
-      <button className="menuButton"><PiHouseFill/></button>
+      <button className="menuButton" onClick={() => {document.getElementById("feed").scrollTo(0,0)}}><PiHouseFill/></button>
       <button className="menuButton"><PiMagnifyingGlass/></button>
       <button className="menuButton"><PiNewspaper/></button>
       <button className="menuButton"><PiUser/></button>
