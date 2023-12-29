@@ -9,7 +9,7 @@ export default function Feed() {
 
   return (
     <div id="feed">
-      {myNews.articles.map((item, key) => {
+      {myNews.result.map((item, key) => {
             return (
               <News key={key} item={item}/>
             );

@@ -3,7 +3,12 @@ import axios from "axios";
 
 export const fetchData = createAsyncThunk("news/getData", async () => {
   const res = await axios(
-    `https://newsapi.org/v2/top-headlines?country=us&apiKey=${process.env.REACT_APP_API_KEY}`
+    `https://api.collectapi.com/news/getNews?country=tr&tag=general`,{
+      headers: {
+        "content-type":"application/json",
+        "authorization": `${process.env.REACT_APP_API_KEY}`
+      }
+    }
   );
   return res.data;
 });
@@ -13,13 +18,13 @@ export const newsSlice = createSlice({
   initialState: {
     loading: false,
     news: {
-      articles: [
+      result: [
         {
-          author: "Yazar Adı",
-          title:"Haber Başlığı",
+          source: "Yazar Adı",
+          name:"Haber Başlığı",
           description:"Haber İçeriği",
           url:"#",
-          urlToImage:"https://picsum.photos/600",
+          image:"https://picsum.photos/600",
           publishedAt:"29/12/2023"
         },
       ],

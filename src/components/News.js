@@ -5,9 +5,9 @@ import { PiHeart, PiChatCircle, PiShareNetwork } from "react-icons/pi";
 export default function News({item}) {
   return (
     <div className="news">
-      <div className="imgAndButtons" style={{backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(${item.urlToImage})`}}>
+      <div className="imgAndButtons" style={{backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(${item.image})`}}>
         <div className="newsButtonsContainer">
-          <div className="newsWriter"><img src="https://picsum.photos/200" alt="writer" /><p>{item.author}</p></div>
+          <div className="newsWriter"><img src="https://picsum.photos/200" alt="writer" /><p>{item.source}</p></div>
           <div className="newsActions">
             <button className="like"><PiHeart/> 50</button>
             <button className="comment"><PiChatCircle/> 6</button>
@@ -17,7 +17,7 @@ export default function News({item}) {
       </div>
       <div className="NewsContentContainer">
         <div className="newsContent">
-          <h1 className="newsHeader">{item.title}</h1>
+          <h1 className="newsHeader">{item.name}</h1>
           <p>{item.description}</p>
         </div>
         <div className="dateAndMore">

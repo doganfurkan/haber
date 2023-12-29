@@ -61,11 +61,11 @@
     display: flex;
     align-items: center;
     gap:.25rem;
-    font-size:14px;
+    font-size:12px;
 }
 
 .newsActions>button>svg{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .like,.comment{
