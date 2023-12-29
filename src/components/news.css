@@ -55,7 +55,7 @@
     gap:.5rem;
 }
 
-.newsActions>button{
+.newsActions>button,.share{
     background:#2255aa;
     border:0;
     border-radius: 3rem;
@@ -64,9 +64,10 @@
     align-items: center;
     gap:.25rem;
     font-size:12px;
+    cursor: pointer;
 }
 
-.newsActions>button>svg{
+.newsActions>button>svg, .share svg{
     font-size: 18px;
 }
 
@@ -79,6 +80,30 @@
     flex-shrink: 0;
     height:100%;
     aspect-ratio: 1;
+    position: relative;
+}
+
+.shareMenu{
+  position: absolute;
+  width:fit-content;
+  white-space: nowrap;
+  right:0;
+  bottom:0;
+  transform: translateY(calc(100% + 1.5rem));
+  background: #fff;
+  padding:.75rem;
+  border-radius: .5rem;
+  box-shadow: -1rem 1rem 3rem;
+  transition: .25s ease-in-out;
+  color:#0b2042;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.share.active .shareMenu{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(calc(100% + .5rem));
 }
 
 .NewsContentContainer {
