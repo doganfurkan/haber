@@ -1,0 +1,129 @@
+.news {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  scroll-snap-align: center;
+}
+
+.news > .imgAndButtons {
+  flex-grow: 1;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+}
+
+.newsButtonsContainer {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 0.75rem 0;
+  background: linear-gradient(180deg, rgba(11, 32, 66, 0) 0%, #0b2042 90%);
+  width: 100%;
+  justify-content: space-between;
+  gap:.75rem;
+}
+
+.newsWriter {
+  background: #fff;
+  font-size: 14px;
+  padding: 0.25rem 0.5rem 0.25rem 0.25rem;
+  border-radius: 3rem;
+  display: flex;
+  align-items: center;
+  gap:.5rem
+}
+
+.newsWriter img{
+    width:2rem;
+    height:2rem;
+    border-radius: 50%;
+    display: block;
+    border:1px solid #0b2042
+}
+
+.newsWriter p{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.newsActions{
+    display:flex;
+    gap:.5rem;
+}
+
+.newsActions>button{
+    background:#2255aa;
+    border:0;
+    border-radius: 3rem;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    gap:.25rem;
+    font-size:14px;
+}
+
+.newsActions>button>svg{
+    font-size: 20px;
+}
+
+.like,.comment{
+    padding:.5rem .75rem;
+}
+
+.share{
+    padding:.5rem;
+    flex-shrink: 0;
+    height:100%;
+    aspect-ratio: 1;
+}
+
+.NewsContentContainer {
+  background: #0b2042;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.newsContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #fff;
+}
+
+.newsHeader {
+  font-size: 22px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.newsContent > p {
+  font-size: 14px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+
+.dateAndMore{
+    display: flex;
+    justify-content: space-between;
+}
+
+.newsDate{
+    color:#fff;
+    font-size:12px;
+    font-style: italic;
+}
+
+.readMore{
+    color:#DD6B1C;
+    font-size:12px;
+    display:block;
+    text-decoration: none;
+}
