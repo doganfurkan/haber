@@ -19,18 +19,20 @@
   padding: 1.5rem 0.75rem 0;
   background: linear-gradient(180deg, rgba(11, 32, 66, 0) 0%, #0b2042 90%);
   width: 100%;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap:.75rem;
 }
 
 .newsWriter {
   background: #fff;
   font-size: 14px;
-  padding: 0.25rem 0.5rem 0.25rem 0.25rem;
+/* padding: 0.25rem 0.5rem 0.25rem 0.25rem; */
+  padding:.5rem;
   border-radius: 3rem;
   display: flex;
   align-items: center;
-  gap:.5rem
+  gap:.5rem;
+  display: none; /* Not displayed because there aren't writer images and publish dates */
 }
 
 .newsWriter img{
