@@ -17,6 +17,10 @@ header{
     color:#fff;
 }
 
+#logo span{
+    color:#c3dd1c;
+}
+
 #openMenu{
     display: flex;
     align-items: center;

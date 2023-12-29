@@ -5,7 +5,7 @@ import { PiList } from "react-icons/pi";
 export default function Header() {
   return (
     <header>
-        <div id="logo">haberci</div>
+        <div id="logo">haber<span>ci</span></div>
         <div id="openMenu"><PiList/></div>
     </header>
   )
