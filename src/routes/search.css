@@ -11,7 +11,7 @@
 
 #searchBox{
     display: flex;
-    border:1px solid var(--secondary);
+    border:1px solid var(--primary);
     border-radius: 5rem;
     margin:.75rem .5rem;
 }
@@ -29,7 +29,7 @@
     background: transparent;
     border:0;
     border-radius: 0 5rem 5rem 0;
-    color:var(--secondary);
+    color:var(--primary);
     font-size:1.25rem;
     padding:0 1rem;
     display: flex;
@@ -47,26 +47,57 @@
     padding:2rem .5rem;
     border-radius: .25rem;
     text-align: center;
+    letter-spacing: 1px;
+    font-weight: 500;
 }
 
-.category:nth-child(5n){
-    background:linear-gradient(135deg,var(--primary),var(--secondary));
+.category:nth-child(6n){
+    background:radial-gradient(#095B5D 0 .2rem,#042A2B .2rem);
+    background-size:.4rem .4rem;
+    color:#EBFFFE;
 }
 
-.category:nth-child(5n-1){
-    background:linear-gradient(60deg, var(--thirdColor),var(--bgColor));
+.category:nth-child(6n-1){
+    background-image:linear-gradient(102.5deg,var(--secondary) 0% 20%, #21949B 20% 40%, #3F738B 40% 60%, #5D527C 60% 80%, #7A306C 80%);
+    background-size: 5%;
+    color:#ddd;
+}
+
+.category:nth-child(6n-2){
+    background:linear-gradient(60deg, #D90429,var(--bgColor));
     color:#fff
 }
 
-.category:nth-child(5n-2){
-    background:var(--secondary);
+.category:nth-child(6n-3){
+    background:radial-gradient(circle at 10% 10%,#BCE0F0 0 20%,#8ECAE6 20% 40%,#219EBC 40% 60%,#045E8B 60% 80%,#023047 80%);
+    color:var(--bgColor)
 }
 
-.category:nth-child(5n-3){
-    background:linear-gradient(0deg,var(--accent),#bebebe);
+.category:nth-child(6n-4){
+    background:linear-gradient(45deg, #0C1B33 50%, #7A306C 50%);
+    background-size: 1rem 1rem;
+    background-position: center;
+    position: relative;
 }
 
-.category:nth-child(5n-4){
-    background:radial-gradient(circle,var(--bgColor),var(--bgColor),#fff5);
-    color:#fff
+.category:nth-child(6n-4)::before{
+    content:attr(data-content);
+    background:linear-gradient(135deg, #432650 50%, transparent 50%);
+    background-size:1rem 1rem;
+    background-position: center;
+    position: absolute;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    border-radius: inherit;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#E5DCDD;
+}
+
+.category:nth-child(6n-5){
+    background:linear-gradient(135deg,#C1FD35,#102342)
 }
