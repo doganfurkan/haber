@@ -18,7 +18,7 @@ header{
 }
 
 #logo span{
-    color:#c3dd1c;
+    color:var(--primary);
     text-decoration: underline;
 }
 

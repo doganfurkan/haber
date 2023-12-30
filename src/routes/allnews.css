@@ -2,7 +2,7 @@
     flex-grow: 1;
     overflow-y: auto;
     justify-content: center;
-    background: #0b2042;
+    background: var(--bgColor);
 }
 
 #allnews>h1{

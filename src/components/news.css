@@ -17,7 +17,7 @@
   display: flex;
   align-items: center;
   padding: 1.5rem 0.75rem 0;
-  background: linear-gradient(180deg, rgba(11, 32, 66, 0) 0%, #0b2042 90%);
+  background: linear-gradient(180deg, rgba(11, 32, 66, 0) 0%, var(--bgColor) 90%);
   width: 100%;
   justify-content: flex-end;
   gap:.75rem;
@@ -40,7 +40,7 @@
     height:2rem;
     border-radius: 50%;
     display: block;
-    border:1px solid #0b2042
+    border:1px solid var(--bgColor)
 }
 
 .newsWriter p{
@@ -71,7 +71,7 @@
 
 .like{
   background: #fff;
-  color:#0b2042;
+  color:var(--bgColor);
 }
 
 .like,.comment{
@@ -79,12 +79,12 @@
 }
 
 .like.liked svg{
-  color:#ef3378
+  color:var(--thirdColor)
 }
 
 .comment{
-  background:#c3dd1c;
-  color:#0b2042;
+  background:var(--primary);
+  color:var(--bgColor);
 }
 
 .share{
@@ -93,8 +93,8 @@
     height:100%;
     aspect-ratio: 1;
     position: relative;
-    background:#2255aa;
-    color:#fff;
+    background:var(--secondary);
+    color:var(--bgColor);
 
 }
 
@@ -109,7 +109,7 @@
   border-radius: .5rem;
   box-shadow: -1rem 1rem 3rem;
   transition: .25s ease-in-out;
-  color:#0b2042;
+  color:var(--bgColor);
   opacity: 0;
   visibility: hidden;
 }
@@ -137,7 +137,7 @@
 }
 
 .NewsContentContainer {
-  background: #0b2042;
+  background: var(--bgColor);
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -179,7 +179,7 @@
 }
 
 .readMore{
-    color:#c3dd1c;
+    color:var(--primary);
     font-size:12px;
     display:block;
     text-decoration: none;

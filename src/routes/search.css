@@ -1,3 +1,72 @@
 #search{
     flex-grow: 1;
+    background: var(--bgColor);
+    overflow: auto;
+}
+
+#search>h1{
+    color:#fff;
+    padding:4.5rem .75rem 0;
+}
+
+#searchBox{
+    display: flex;
+    border:1px solid var(--secondary);
+    border-radius: 5rem;
+    margin:.75rem .5rem;
+}
+
+#searchInput{
+    padding:.75rem .75rem .75rem 1rem;
+    flex-grow: 1;
+    border-radius: 5rem 0 0 5rem;
+    border:0;
+    background: transparent;
+    color:#fff
+}
+
+#searchButton{
+    background: transparent;
+    border:0;
+    border-radius: 0 5rem 5rem 0;
+    color:var(--secondary);
+    font-size:1.25rem;
+    padding:0 1rem;
+    display: flex;
+    align-items: center;
+}
+
+#categories{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:.75rem;
+    padding:.75rem;
+}
+
+.category{
+    padding:2rem .5rem;
+    border-radius: .25rem;
+    text-align: center;
+}
+
+.category:nth-child(5n){
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
+}
+
+.category:nth-child(5n-1){
+    background:linear-gradient(60deg, var(--thirdColor),var(--bgColor));
+    color:#fff
+}
+
+.category:nth-child(5n-2){
+    background:var(--secondary);
+}
+
+.category:nth-child(5n-3){
+    background:linear-gradient(0deg,var(--accent),#bebebe);
+}
+
+.category:nth-child(5n-4){
+    background:radial-gradient(circle,var(--bgColor),var(--bgColor),#fff5);
+    color:#fff
 }

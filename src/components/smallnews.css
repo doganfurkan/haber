@@ -8,13 +8,18 @@
 }
 
 #allnewsleft .smallNews:nth-child(3n){
-    background:#c3dd1c;
-    color:#000
+    background:var(--primary);
+    color:var(--bgColor)
 }
 
 #allnewsright .smallNews:nth-child(4n-3){
-    background:#fff;
+    background:var(--accent);
     color:#000
+}
+
+#allnewsright .smallNews:nth-child(4n){
+    background:var(--thirdColor);
+    color:#fff
 }
 
 .smallNewsImage{
@@ -25,7 +30,7 @@
 .smallNewsImage img{
     width: 100%;
     display: block;
-    border-radius: .5rem .5rem 0 0;
+    border-radius: .25rem .25rem 0 0;
 }
 
 .smallNewsContent{
