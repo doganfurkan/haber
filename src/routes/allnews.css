@@ -1,0 +1,23 @@
+#allnews{
+    flex-grow: 1;
+    overflow-y: auto;
+    justify-content: center;
+    background: #0b2042;
+}
+
+#allnews>h1{
+    color:#fff;
+    padding:4.5rem .75rem 0;
+}
+
+#allnewscontainer{
+    display: flex;
+    gap:.75rem;
+    padding:.75rem;
+}
+
+#allnewscontainer>div{
+    display: flex;
+    flex-direction: column;
+    gap:.75rem;
+}

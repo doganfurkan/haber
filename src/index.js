@@ -5,11 +5,43 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { store } from "./redux/store";
 import { Provider } from "react-redux";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Feed from './routes/Feed';
+import Search from './routes/Search';
+import Errorpage from './routes/Errorpage';
+import Allnews from './routes/Allnews';
+import Profile from './routes/Profile';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <Errorpage />,
+    children: [
+      {
+        index: true,
+        element: <Feed />,
+      },
+      {
+        path: "/search",
+        element: <Search />,
+      },
+      {
+        path: "/news",
+        element: <Allnews />,
+      },
+      {
+        path: "/profile",
+        element: <Profile />,
+      },
+    ],
+  },
+]);
+
 root.render(
   <Provider store={store}>
-    <App />
+    <RouterProvider router={router} />
   </Provider>
 );
 

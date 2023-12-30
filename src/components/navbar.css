@@ -6,7 +6,7 @@
     border-top:1px solid #fff
 }
 
-#nav>button{
+.menuButton{
     flex-grow: 1;
     background-color: transparent;
     border: 0;

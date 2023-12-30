@@ -1,6 +1,6 @@
 import React from 'react'
 import "./feed.css"
-import News from './News'
+import News from '../components/News'
 import { useSelector } from "react-redux";
 
 
