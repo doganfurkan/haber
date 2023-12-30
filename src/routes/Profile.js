@@ -1,6 +1,6 @@
 import React from "react";
 import "./profile.css";
-import { PiGear, PiEnvelopeSimple, PiInfo, PiQuestion } from "react-icons/pi";
+import { PiGear, PiEnvelopeSimple, PiInfo, PiQuestion, PiCrownSimple } from "react-icons/pi";
 
 
 export default function Profile() {
@@ -19,6 +19,7 @@ export default function Profile() {
         </div>
       </div>
       <div id="profileList">
+        <button><PiCrownSimple/>Premium'a Geç <span>%20 İndirim</span></button>
         <button><PiGear/>Ayarlar ve Gizlilik</button>
         <button><PiEnvelopeSimple/>Bize Ulaşın</button>
         <button><PiQuestion/>Sıkça Sorulan Sorular</button>

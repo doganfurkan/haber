@@ -22,7 +22,7 @@
     width:4rem;
     border-radius: 3rem;
     display: block;
-    border:1px solid var(--secondary)
+    border:1px solid var(--primary)
 }
 
 #profileDetail{
@@ -39,7 +39,7 @@
 }
 
 #profilesubtext{
-    color:var(--secondary);
+    color:var(--primary);
     font-size:.8rem
 }
 
@@ -63,4 +63,12 @@
 
 #profileList button svg{
     font-size: 1.25em;
+}
+
+#profileList button span{
+    font-size:.6rem;
+    display: block;
+    padding:.3rem .6rem;
+    background:var(--secondary);
+    border-radius: 2rem;
 }
