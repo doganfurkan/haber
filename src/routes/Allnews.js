@@ -24,13 +24,13 @@ export default function Allnews() {
       </div>
       <div id="allnewscontainer">
         <div id="allnewsleft">
-          {myNews.result.map((item, key) => {
-            if (!(key % 2)) return <Smallnews key={key} item={item} />;
+          {myNews.result.filter(i => !(i.key % 2)).map((item) => {
+            return <Smallnews key={item.key} item={item} />;
           })}
         </div>
         <div id="allnewsright">
-          {myNews.result.map((item, key) => {
-            if (key % 2) return <Smallnews key={key} item={item} />;
+          {myNews.result.filter(i => (i.key % 2)).map((item, key) => {
+            return <Smallnews key={key} item={item} />;
           })}
         </div>
       </div>
