@@ -72,3 +72,30 @@
     background:var(--secondary);
     border-radius: 2rem;
 }
+
+@media screen and (min-width:750px){
+    #profile>h1{
+        padding:1.5rem 1.5rem 0
+    }
+
+    #myProfile{
+        margin:1.5rem;
+    }
+
+    #profileList{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding:0 1.5rem 1.5rem
+    }
+
+    #profileList>button{
+        border-radius: .25rem;
+        cursor:pointer;
+        padding:1rem;
+    }
+
+    #profileList>button:hover,
+    #profileList>button:focus{
+        background:#fff1;
+    }
+}

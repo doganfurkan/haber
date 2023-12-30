@@ -38,7 +38,7 @@
 
 #categories{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap:.75rem;
     padding:.75rem;
 }
@@ -100,4 +100,34 @@
 
 .category:nth-child(6n-5){
     background:linear-gradient(135deg,#C1FD35,#102342)
+}
+
+
+@media screen and (min-width:750px) {
+    #search>h1{
+        padding:1.5rem 1.5rem 0;
+    }
+
+    #searchBox{
+        margin:1rem 1.25rem;
+        max-width:800px
+    }
+
+    #searchInput{
+        font-size:1rem
+    }
+
+    #searchButton{
+        font-size:1.5rem
+    }
+
+    #categories{
+        padding:.75rem 1.5rem;
+    }
+
+    .category{
+        padding: 3.5rem 1rem;
+        cursor: pointer;
+        font-size:1.15rem
+    }
 }

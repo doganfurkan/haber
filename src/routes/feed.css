@@ -4,3 +4,10 @@
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
 }
+
+@media screen and (min-width:750px) {
+    #feed{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
