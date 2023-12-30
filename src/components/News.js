@@ -7,6 +7,7 @@ import {
   PiShareNetwork,
   PiCopy,
   PiWhatsappLogo,
+  PiTwitterLogo
 } from "react-icons/pi";
 var interactionNumber = Math.round(Math.random() * 100);
 var commentNumber = Math.round(
@@ -70,6 +71,9 @@ export default function News({ item }) {
                 </div>
                 <a className="shareWhatsapp" href={`https://api.whatsapp.com/send?text=${item.url}`}>
                   <PiWhatsappLogo /> Whatsapp ile Paylaş
+                </a>
+                <a className="shareTwitter" href={`https://twitter.com/intent/tweet?text=${item.url}`}>
+                  <PiTwitterLogo /> Twitter'da Paylaş
                 </a>
               </div>
             </div>

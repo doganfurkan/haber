@@ -132,7 +132,7 @@
   color:inherit
 }
 
-.shareMenu>div+*{
+.shareMenu>*+*{
   border-top:1px solid #cad4e5
 }
 
