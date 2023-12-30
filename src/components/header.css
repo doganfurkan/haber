@@ -1,7 +1,7 @@
 header{
     width:100%;
     display: flex;
-    padding:1rem 1rem;
+    padding:1rem .75rem;
     justify-content: space-between;
     background: linear-gradient(180deg,rgba(0,0,0,0.5),rgba(0,0,0,0));
 /*  border-bottom:1px solid #fff; */
