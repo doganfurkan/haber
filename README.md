@@ -26,6 +26,7 @@ Users should be able to:
 ### Screenshot
 
 ![Mobile Homepage](./mobileHomepage.png)
+![Mobile Search Page](./mobileSearchPage.png)
 
 ### Links
 
